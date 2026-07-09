@@ -1,192 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mr Gadget Studio - Mobile Games</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 20px;
-        }
-        .container {
-            max-width: 800px;
-            background: white;
-            border-radius: 20px;
-            padding: 40px;
-            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
-        }
-        h1 {
-            color: #333;
-            margin-bottom: 10px;
-            font-size: 2.5em;
-        }
-        .subtitle {
-            color: #666;
-            margin-bottom: 40px;
-            font-size: 1.2em;
-        }
-        .apps {
-            margin-top: 30px;
-        }
-        .app-card {
-            border: 2px solid #667eea;
-            border-radius: 12px;
-            padding: 25px;
-            margin: 20px 0;
-            transition: transform 0.3s, box-shadow 0.3s;
-        }
-        .app-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
-        }
-        .app-card h2 {
-            color: #667eea;
-            margin-bottom: 10px;
-        }
-        .app-card p {
-            color: #666;
-            margin-bottom: 15px;
-            line-height: 1.6;
-        }
-        .badge {
-            display: inline-block;
-        }
-        .badge img {
-            height: 50px;
-        }
-        footer {
-            margin-top: 50px;
-            padding-top: 30px;
-            border-top: 2px solid #eee;
-            text-align: center;
-            color: #999;
-        }
-        footer a {
-            color: #667eea;
-            text-decoration: none;
-            margin: 0 15px;
-        }
-        footer a:hover {
-            text-decoration: underline;
-        }
-        .coming-soon {
-            opacity: 0.6;
-            font-style: italic;
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <h1>Mr Gadget Studio</h1>
-        <p class="subtitle">Indie Mobile App Developer</p>
-        
-        <div class="apps">
-            <div class="app-card">
-                <h2>Chesstory – Chess War Tactics</h2>
-                <img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/24/75/d7/2475d7c9-9321-3454-e11c-db6452a0c0c9/Placeholder.mill/400x400bb-75.webp" style="width:200px;">
-                <p>Chesstory – Chess War Tactics transforms classic chess movement into a living medieval battlefield. Command armies where every piece is a real fighting unit with its own health, attack power, and battlefield role.</p>
-                <div class="badge">
-                    <a href="https://apps.apple.com/us/app/chesstory-chess-war-tactics/id6782640345" target="_blank">
-                        <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Get it on Apple Store" style="height: 60px;">
-                    </a>
-                    
-                </div>
-            </div>
-
-            <div class="app-card">
-                <h2>Pixel Fishing Quest</h2>
-                <img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/3d/e3/72/3de372ae-af6b-45e2-285c-c81ed9125604/Placeholder.mill/400x400bb-75.webp" style="width:200px;">
-                <p>Relax and enjoy the ultimate pixel fishing experience! Catch rare fish, unlock achievements, and explore beautiful pixel art underwater worlds.</p>
-                <div class="badge">
-                    <a href="https://apps.apple.com/us/app/pixel-fishing-quest/id6771285366" target="_blank">
-                        <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Get it on Apple Store" style="height: 60px;">
-                    </a>
-                    
-                    <a href="https://play.google.com/store/apps/details?id=com.minh.fishingGame" target="_blank">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/3840px-Google_Play_Store_badge_EN.svg.png" alt="Get it on Google Play" style="height: 60px;">
-                    </a>
-                    
-                </div>
-            </div>
-            
-            <div class="app-card">
-                <h2>Racing Chaotix - Bike Racing</h2>
-                <img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/d2/e9/d5/d2e9d5ee-b366-bc88-92a1-6137833a4362/Placeholder.mill/400x400bb-75.webp" style="width:200px;">
-                <p>Race Chaotix is a fast arcade bike racer built for quick local competition and chaotic weapon-based matches.</p>
-                <div class="badge">
-                    <a href="https://apps.apple.com/us/app/race-chaotix-bike-racing/id6780390801" target="_blank">
-                        <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Get it on Apple Store" style="height: 60px;">
-                    </a>
-                    
-                </div>
-            </div>
-
-<div class="app-card">
-                <h2>Balltacus - Ball Arena</h2>
-                <img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/f9/1e/7a/f91e7aad-41f0-b973-d064-d1f72437b5b6/Placeholder.mill/400x400bb-75.webp" style="width:200px;">
-                <p>Enter the arena in Balltacus - Ball Arena, a fast and playful Roman-themed battle game where bouncing combat balls clash in a circular coliseum.</p>
-                <div class="badge">
-                    <a href="https://apps.apple.com/us/app/balltacus-ball-arena/id6779310217" target="_blank">
-                        <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Get it on Apple Store" style="height: 60px;">
-                    </a>
-                    
-                </div>
-            </div>
-            
-            <div class="app-card">
-                <h2>Wood Project Calculator</h2>
-                <img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/5c/94/58/5c9458e5-7e90-3d1f-252f-a117f1964449/Placeholder.mill/400x400bb-75.webp" style="width:200px;">
-                <p>All-in-one woodworking tool for board foot, cut lists, kerf, miter, and spacing calculations. Plan projects smarter, buy the right lumber, and reduce waste.</p>
-                <div class="badge">
-                    <a href="https://apps.apple.com/us/app/wood-project-calculator/id6775448936" target="_blank">
-                        <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Get it on Apple Store" style="height: 60px;">
-                    </a>
-                </div>
-            </div>
-            
-            <div class="app-card">
-                <h2>Inductor Calculator Master</h2>
-                <img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/46/10/3e/46103ec5-934b-c808-71ee-7186aea2b593/Placeholder.mill/400x400bb-75.webp" style="width:200px;">
-                <p>Inductor Calculator Master is the most complete offline inductor & coil calculator for engineers, ham radio operators, and electronics hobbyists. No internet required.</p>
-                <div class="badge">
-                    <a href="https://apps.apple.com/us/app/inductor-calculator-master/id6772124135" target="_blank">
-                        <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Get it on Apple Store" style="height: 60px;">
-                    </a>
-                </div>
-            </div>
-
-            <div class="app-card">
-                <h2>Resin Calculator Master</h2>
-                <img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/23/c9/3a/23c93a94-3b32-2fc6-fad6-f601dab7ff51/Placeholder.mill/400x400bb-75.webp" style="width:200px;">
-                <p>Resin Calculator Master takes the guesswork out of every pour. Calculate exact volumes, split ratios instantly, track mix steps, and never over-order resin again.</p>
-                <div class="badge">
-                    <a href="https://apps.apple.com/us/app/resin-calculator-master/id6772931749" target="_blank">
-                        <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Get it on Apple Store" style="height: 60px;">
-                    </a>
-                </div>
-            </div>
-            
-        </div>
-        
-        <footer>
-            <p>
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <title>Mr Gadget Studio</title>
+      <style>
+         *{box-sizing:border-box}body{margin:0;font-family:Inter,Arial,sans-serif;background:#7c9661;color:#fff}
+         .wrap{max-width:1180px;margin:auto;padding:48px 24px}
+         header{text-align:center;margin-bottom:42px}
+         .logo{width:90px;height:90px;border-radius:22px;background:rgba(255,255,255,.15);display:inline-flex;align-items:center;justify-content:center;border:2px dashed rgba(255,255,255,.35);margin-bottom:18px}
+         h1{margin:0;font-size:46px}.sub{opacity:.9}
+         .grid{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+         .section h2{text-align:center;margin:0 0 18px}
+         .card{background:#fff;color:#222;border-radius:18px;padding:16px;display:flex;gap:16px;align-items:flex-start;box-shadow:0 10px 24px rgba(0,0,0,.12);margin-bottom:18px;transition:.2s}
+         .card:hover{transform:translateY(-3px)}
+         .icon{width:96px;height:96px;border-radius:22px;object-fit:cover;flex:none}
+         .info{display:flex;flex-direction:column;min-width:0}
+         .title{font-size:20px;font-weight:700;color:#35532b;margin-bottom:8px}
+         .desc{font-size:14px;line-height:1.45;color:#666;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;margin-bottom:12px}
+         .badges{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+         .badges img{height:38px}
+         footer{text-align:center;padding:30px 0;opacity:.9}
+         @media(max-width:900px){.grid{grid-template-columns:1fr}.card{padding:14px}.icon{width:84px;height:84px}}
+      </style>
+   </head>
+   <body>
+      <div class="wrap">
+         <header>
+            <div class="logo"><img src="https://pbs.twimg.com/profile_images/2072221046292492288/7Aze9gyh_400x400.jpg"></div>
+            <h1>Mr Gadget Studio</h1>
+            <div class="sub">Indie Mobile Apps & Games</div>
+         </header>
+         <div class="grid">
+            <div class="section">
                 
-                <a href="mailto:webmaster0312@gmail.com">Contact</a>
-                <a href="https://github.com/mrgadgetvn" target="_blank">GitHub</a>
-            </p>
-            <p style="margin-top: 15px; font-size: 0.9em;">© 2026 Mr Gadget Studio. All rights reserved.</p>
-        </footer>
-    </div>
-</body>
+             <h2>🎮 Mobile Games</h2>
+               <div class="card">
+                  <img class="icon" src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/24/75/d7/2475d7c9-9321-3454-e11c-db6452a0c0c9/Placeholder.mill/400x400bb-75.webp">
+                  <div class="info">
+                     <div class="title">Chesstory</div>
+                     <div class="desc">Chess meets medieval tactics.</div>
+                     <div class="badges"><img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"></div>
+                  </div>
+               </div>
+               <div class="card">
+                  <img class="icon" src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/3d/e3/72/3de372ae-af6b-45e2-285c-c81ed9125604/Placeholder.mill/400x400bb-75.webp">
+                  <div class="info">
+                     <div class="title">Pixel Fishing Quest</div>
+                     <div class="desc">Relaxing pixel fishing adventure.</div>
+                     <div class="badges"><img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/512px-Google_Play_Store_badge_EN.svg.png"></div>
+                  </div>
+               </div>
+               <div class="card">
+                  <img class="icon" src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/d2/e9/d5/d2e9d5ee-b366-bc88-92a1-6137833a4362/Placeholder.mill/400x400bb-75.webp">
+                  <div class="info">
+                     <div class="title">Racing Chaotix</div>
+                     <div class="desc">Chaotic arcade bike racing.</div>
+                     <div class="badges"><img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"></div>
+                  </div>
+               </div>
+               <div class="card">
+                  <img class="icon" src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/f9/1e/7a/f91e7aad-41f0-b973-d064-d1f72437b5b6/Placeholder.mill/400x400bb-75.webp">
+                  <div class="info">
+                     <div class="title">Balltacus</div>
+                     <div class="desc">Roman arena battle balls.</div>
+                     <div class="badges"><img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"></div>
+                  </div>
+               </div>
+            </div>  
+             
+            <div class="section">
+
+               <h2>📱 Mobile Apps</h2>
+               <div class="card">
+                  <img class="icon" src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/5c/94/58/5c9458e5-7e90-3d1f-252f-a117f1964449/Placeholder.mill/400x400bb-75.webp">
+                  <div class="info">
+                     <div class="title">Wood Project Calculator</div>
+                     <div class="desc">All-in-one woodworking calculator for board feet, cut lists and material planning.</div>
+                     <div class="badges"><img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"></div>
+                  </div>
+               </div>
+               <div class="card">
+                  <img class="icon" src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/46/10/3e/46103ec5-934b-c808-71ee-7186aea2b593/Placeholder.mill/400x400bb-75.webp">
+                  <div class="info">
+                     <div class="title">Inductor Calculator Master</div>
+                     <div class="desc">Professional offline coil and inductor calculator for engineers and makers.</div>
+                     <div class="badges"><img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"></div>
+                  </div>
+               </div>
+               <div class="card">
+                  <img class="icon" src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/23/c9/3a/23c93a94-3b32-2fc6-fad6-f601dab7ff51/Placeholder.mill/400x400bb-75.webp">
+                  <div class="info">
+                     <div class="title">Resin Calculator Master</div>
+                     <div class="desc">Calculate resin volume and mixing ratios accurately for every pour.</div>
+                     <div class="badges"><img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"></div>
+                  </div>
+               </div>
+            </div>
+                
+              
+         </div>
+         <footer><a href="mailto:webmaster0312@gmail.com">Contact Me</a></footer>
+      </div>
+   </body>
 </html>
